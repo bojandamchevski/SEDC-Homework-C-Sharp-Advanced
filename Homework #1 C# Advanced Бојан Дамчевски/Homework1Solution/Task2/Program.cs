@@ -20,7 +20,7 @@ namespace Task2
                 else if ((date.Month.ToString() == "1" && date.Day.ToString() == "1") || (date.Month.ToString() == "1" && date.Day.ToString() == "7") || (date.Month.ToString() == "4" && date.Day.ToString() == "20") || (date.Month.ToString() == "5" && date.Day.ToString() == "1") || (date.Month.ToString() == "5" && date.Day.ToString() == "25") || (date.Month.ToString() == "8" && date.Day.ToString() == "3") || (date.Month.ToString() == "10" && date.Day.ToString() == "12") || (date.Month.ToString() == "10" && date.Day.ToString() == "23") || (date.Month.ToString() == "12" && date.Day.ToString() == "8"))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("NOT WORKING DAY");
+                    Console.WriteLine("NOT A WORKING DAY");
                 }
                 else
                 {
