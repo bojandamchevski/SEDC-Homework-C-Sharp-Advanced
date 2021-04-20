@@ -63,7 +63,7 @@ namespace Task2
                     Console.WriteLine(e.Message);
                 }
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("If you want to exit type (Exit)");
+                Console.WriteLine("If you want to exit type (Exit) or press enter to try again !");
                 string exit = Console.ReadLine();
                 if (exit.ToLower() == "exit")
                 {
