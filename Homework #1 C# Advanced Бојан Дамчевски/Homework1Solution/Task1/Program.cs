@@ -63,7 +63,9 @@ namespace Task1
             Console.WriteLine("=========================================");
             Console.WriteLine("Welcome to the stats !");
             double percentagePlayer = nickName.GamesWon / (double)nickName.NumberOfGames * 100;
+            percentagePlayer = Math.Round(percentagePlayer, 2);
             double percentageComputer = computer.GamesWon / (double)computer.NumberOfGames * 100;
+            percentageComputer = Math.Round(percentageComputer, 2);
             Console.WriteLine($"{nickName.NickName} won {nickName.GamesWon} games out of {nickName.NumberOfGames} games and the success rate was {percentagePlayer}%.");
             Console.WriteLine($"Computer won {computer.GamesWon} games out of {computer.NumberOfGames} games and the success rate was {percentageComputer}%.");
             Console.WriteLine("=========================================");

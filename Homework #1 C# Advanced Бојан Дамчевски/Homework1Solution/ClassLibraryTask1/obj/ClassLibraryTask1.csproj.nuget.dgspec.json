@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Com\\Desktop\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\ClassLibraryTask1.csproj": {}
+    "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\ClassLibraryTask1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Com\\Desktop\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\ClassLibraryTask1.csproj": {
+    "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\ClassLibraryTask1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Com\\Desktop\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\ClassLibraryTask1.csproj",
+        "projectUniqueName": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\ClassLibraryTask1.csproj",
         "projectName": "ClassLibraryTask1",
-        "projectPath": "C:\\Users\\Com\\Desktop\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\ClassLibraryTask1.csproj",
+        "projectPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\ClassLibraryTask1.csproj",
         "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Com\\Desktop\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\obj\\",
+        "outputPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\Homework #1 C# Advanced Бојан Дамчевски\\Homework1Solution\\ClassLibraryTask1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",

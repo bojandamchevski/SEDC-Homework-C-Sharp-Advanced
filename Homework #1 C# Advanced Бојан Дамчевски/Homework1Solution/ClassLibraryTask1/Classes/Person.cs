@@ -8,7 +8,6 @@ namespace ClassLibraryTask1.Classes
     {
         public Person(string nickName) : base(nickName)
         {
-            NickName = nickName;
         }
     }
 }
