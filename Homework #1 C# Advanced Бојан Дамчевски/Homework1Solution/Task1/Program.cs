@@ -53,6 +53,10 @@ namespace Task1
                         nickName.GamesWon++;
                     }
                 }
+                else
+                {
+                    throw new Exception("Invalid input !");
+                }
             }
             Console.WriteLine("=========================================");
             Console.WriteLine("Press any button to go to the menu.");
@@ -78,7 +82,22 @@ namespace Task1
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Let's play rock, paper, scissors");
             Console.WriteLine("Enter player name: ");
-            Player player = new Player(Console.ReadLine());
+            string playerNickName;
+            while (true)
+            {
+                playerNickName = Console.ReadLine();
+                if (String.IsNullOrEmpty(playerNickName))
+                {
+                    Console.WriteLine("Try again, there must be a player nickname to play !\nEnter a nickname:");
+                    flag = false;
+                }
+                else
+                {
+                    flag = true;
+                    break;
+                }
+            }
+            Player player = new Player(playerNickName);
             Computer computer = new Computer();
             while (flag)
             {
