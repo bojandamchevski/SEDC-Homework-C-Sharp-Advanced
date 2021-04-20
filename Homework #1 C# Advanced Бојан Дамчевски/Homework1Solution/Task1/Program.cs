@@ -97,7 +97,7 @@ namespace Task1
                     break;
                 }
             }
-            Player player = new Player(playerNickName);
+            Person player = new Person(playerNickName);
             Computer computer = new Computer();
             while (flag)
             {
