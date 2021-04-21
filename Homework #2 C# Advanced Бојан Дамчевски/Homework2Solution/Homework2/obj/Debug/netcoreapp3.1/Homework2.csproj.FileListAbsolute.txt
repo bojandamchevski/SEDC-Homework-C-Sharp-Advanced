@@ -1,0 +1,16 @@
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\bin\Debug\netcoreapp3.1\Homework2.exe
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\bin\Debug\netcoreapp3.1\Homework2.deps.json
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\bin\Debug\netcoreapp3.1\Homework2.runtimeconfig.json
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\bin\Debug\netcoreapp3.1\Homework2.runtimeconfig.dev.json
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\bin\Debug\netcoreapp3.1\Homework2.dll
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\bin\Debug\netcoreapp3.1\Homework2.pdb
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\bin\Debug\netcoreapp3.1\DomainLibrary.dll
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\bin\Debug\netcoreapp3.1\DomainLibrary.pdb
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\obj\Debug\netcoreapp3.1\Homework2.csprojAssemblyReference.cache
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\obj\Debug\netcoreapp3.1\Homework2.AssemblyInfoInputs.cache
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\obj\Debug\netcoreapp3.1\Homework2.AssemblyInfo.cs
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\obj\Debug\netcoreapp3.1\Homework2.csproj.CoreCompileInputs.cache
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\obj\Debug\netcoreapp3.1\Homework2.csproj.CopyComplete
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\obj\Debug\netcoreapp3.1\Homework2.dll
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\obj\Debug\netcoreapp3.1\Homework2.pdb
+C:\Users\Com\Desktop\Homework #2 C# Advanced Бојан Дамчевски\Homework2Solution\Homework2\obj\Debug\netcoreapp3.1\Homework2.genruntimeconfig.cache
