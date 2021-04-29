@@ -1,0 +1,16 @@
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\bin\Debug\netcoreapp3.1\HomeworkApp.exe
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\bin\Debug\netcoreapp3.1\HomeworkApp.deps.json
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\bin\Debug\netcoreapp3.1\HomeworkApp.runtimeconfig.json
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\bin\Debug\netcoreapp3.1\HomeworkApp.runtimeconfig.dev.json
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\bin\Debug\netcoreapp3.1\HomeworkApp.dll
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\bin\Debug\netcoreapp3.1\HomeworkApp.pdb
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\obj\Debug\netcoreapp3.1\HomeworkApp.csprojAssemblyReference.cache
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\obj\Debug\netcoreapp3.1\HomeworkApp.AssemblyInfoInputs.cache
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\obj\Debug\netcoreapp3.1\HomeworkApp.AssemblyInfo.cs
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\obj\Debug\netcoreapp3.1\HomeworkApp.csproj.CoreCompileInputs.cache
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\obj\Debug\netcoreapp3.1\HomeworkApp.csproj.CopyComplete
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\obj\Debug\netcoreapp3.1\HomeworkApp.dll
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\obj\Debug\netcoreapp3.1\HomeworkApp.pdb
+C:\Users\Com\Desktop\Homework #3 C# Advanced Бојан Дамчевски\Homework3Solution\HomeworkApp\obj\Debug\netcoreapp3.1\HomeworkApp.genruntimeconfig.cache
