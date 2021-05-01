@@ -6,3 +6,12 @@ C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homew
 C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.csproj.CoreCompileInputs.cache
 C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.dll
 C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.pdb
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\bin\Debug\netcoreapp3.1\Task2Domain.deps.json
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\bin\Debug\netcoreapp3.1\Task2Domain.dll
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\bin\Debug\netcoreapp3.1\Task2Domain.pdb
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.csprojAssemblyReference.cache
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.AssemblyInfoInputs.cache
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.AssemblyInfo.cs
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.csproj.CoreCompileInputs.cache
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.dll
+C:\Users\Com\Desktop\SEDC-Homework-C-Sharp-Advanced\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2Domain\obj\Debug\netcoreapp3.1\Task2Domain.pdb

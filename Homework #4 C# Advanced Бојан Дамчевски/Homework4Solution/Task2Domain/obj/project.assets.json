@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Com\\Desktop\\Homework #4 C# Advanced Бојан Дамчевски\\Homework4Solution\\Task2Domain\\Task2Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\Homework #4 C# Advanced Бојан Дамчевски\\Homework4Solution\\Task2Domain\\Task2Domain.csproj",
       "projectName": "Task2Domain",
-      "projectPath": "C:\\Users\\Com\\Desktop\\Homework #4 C# Advanced Бојан Дамчевски\\Homework4Solution\\Task2Domain\\Task2Domain.csproj",
+      "projectPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\Homework #4 C# Advanced Бојан Дамчевски\\Homework4Solution\\Task2Domain\\Task2Domain.csproj",
       "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Com\\Desktop\\Homework #4 C# Advanced Бојан Дамчевски\\Homework4Solution\\Task2Domain\\obj\\",
+      "outputPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\Homework #4 C# Advanced Бојан Дамчевски\\Homework4Solution\\Task2Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",

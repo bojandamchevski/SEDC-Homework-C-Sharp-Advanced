@@ -41,7 +41,7 @@ namespace Task2Domain
             if (existingPet != null)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Pets.Remove(existingPet);
+                pets.Remove(existingPet);
                 Console.WriteLine("Pet adopted");
             }
             else
