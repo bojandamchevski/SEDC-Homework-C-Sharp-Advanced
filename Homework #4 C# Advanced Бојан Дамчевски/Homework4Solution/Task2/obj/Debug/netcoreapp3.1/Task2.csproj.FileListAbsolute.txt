@@ -1,0 +1,16 @@
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\bin\Debug\netcoreapp3.1\Task2.exe
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\bin\Debug\netcoreapp3.1\Task2.deps.json
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\bin\Debug\netcoreapp3.1\Task2.runtimeconfig.json
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\bin\Debug\netcoreapp3.1\Task2.runtimeconfig.dev.json
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\bin\Debug\netcoreapp3.1\Task2.dll
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\bin\Debug\netcoreapp3.1\Task2.pdb
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\bin\Debug\netcoreapp3.1\Task2Domain.dll
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\bin\Debug\netcoreapp3.1\Task2Domain.pdb
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\obj\Debug\netcoreapp3.1\Task2.csprojAssemblyReference.cache
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\obj\Debug\netcoreapp3.1\Task2.AssemblyInfoInputs.cache
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\obj\Debug\netcoreapp3.1\Task2.AssemblyInfo.cs
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\obj\Debug\netcoreapp3.1\Task2.csproj.CoreCompileInputs.cache
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\obj\Debug\netcoreapp3.1\Task2.csproj.CopyComplete
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\obj\Debug\netcoreapp3.1\Task2.dll
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\obj\Debug\netcoreapp3.1\Task2.pdb
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task2\obj\Debug\netcoreapp3.1\Task2.genruntimeconfig.cache

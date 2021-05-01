@@ -1,0 +1,9 @@
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\bin\Debug\netcoreapp3.1\Task1Domain.deps.json
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\bin\Debug\netcoreapp3.1\Task1Domain.dll
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\bin\Debug\netcoreapp3.1\Task1Domain.pdb
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\obj\Debug\netcoreapp3.1\Task1Domain.csprojAssemblyReference.cache
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\obj\Debug\netcoreapp3.1\Task1Domain.AssemblyInfoInputs.cache
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\obj\Debug\netcoreapp3.1\Task1Domain.AssemblyInfo.cs
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\obj\Debug\netcoreapp3.1\Task1Domain.csproj.CoreCompileInputs.cache
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\obj\Debug\netcoreapp3.1\Task1Domain.dll
+C:\Users\Com\Desktop\Homework #4 C# Advanced Бојан Дамчевски\Homework4Solution\Task1Domain\obj\Debug\netcoreapp3.1\Task1Domain.pdb
