@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\TimeTrackingApp.App.csproj": {}
+    "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\TimeTrackingApp.App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\TimeTrackingApp.App.csproj": {
+    "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\TimeTrackingApp.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\TimeTrackingApp.App.csproj",
+        "projectUniqueName": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\TimeTrackingApp.App.csproj",
         "projectName": "TimeTrackingApp.App",
-        "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\TimeTrackingApp.App.csproj",
+        "projectPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\TimeTrackingApp.App.csproj",
         "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\obj\\",
+        "outputPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj": {
-                "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj"
+              "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj": {
+                "projectPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj": {
+    "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj",
         "projectName": "TimeTrackingApp.Domain",
-        "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj",
+        "projectPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj",
         "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,14 +116,14 @@
         }
       }
     },
-    "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj": {
+    "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj",
         "projectName": "TimeTrackingApp.Services",
-        "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj",
+        "projectPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\TimeTrackingApp.Services.csproj",
         "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\obj\\",
+        "outputPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,8 +140,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj"
+              "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj"
               }
             }
           }

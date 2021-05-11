@@ -4,7 +4,6 @@ using TimeTrackingApp.Domain.Database;
 using System;
 using TimeTrackingApp.Services.Helpers;
 using System.Diagnostics;
-using System.Collections.Generic;
 
 namespace TimeTrackingApp.Services.Implementations
 {

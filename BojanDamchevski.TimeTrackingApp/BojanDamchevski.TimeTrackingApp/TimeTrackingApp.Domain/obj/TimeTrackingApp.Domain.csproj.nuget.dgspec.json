@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj": {}
+    "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj": {
+    "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj",
         "projectName": "TimeTrackingApp.Domain",
-        "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj",
+        "projectPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\TimeTrackingApp.Domain.csproj",
         "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Com\\Desktop\\SEDC-Homework-C-Sharp-Advanced\\BojanDamchevski.TimeTrackingApp\\BojanDamchevski.TimeTrackingApp\\TimeTrackingApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",

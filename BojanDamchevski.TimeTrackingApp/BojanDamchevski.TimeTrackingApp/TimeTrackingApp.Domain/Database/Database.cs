@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using TimeTrackingApp.Domain.Models;
 using System.Linq;
-using System;
 
 namespace TimeTrackingApp.Domain.Database
 {
