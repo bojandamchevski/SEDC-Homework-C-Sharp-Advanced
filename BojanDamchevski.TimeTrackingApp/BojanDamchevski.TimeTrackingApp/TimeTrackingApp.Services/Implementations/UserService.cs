@@ -28,7 +28,7 @@ namespace TimeTrackingApp.Services.Implementations
             _database.InsertUser(user);
         }
 
-        public T ChangeFristAndLastName(T user)
+        public T ChangeFristName(T user)
         {
             bool flag = true;
             while (flag)
@@ -37,13 +37,40 @@ namespace TimeTrackingApp.Services.Implementations
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Enter new first name:");
                 string newFirstName = Console.ReadLine();
+                user.FirstName = newFirstName;
+                if (ValidationHelper.ValidateFirstNameLastName(user) == true)
+                {
+                    flag = false;
+                    Console.WriteLine("Success!");
+                    Console.WriteLine("Press any key to continue");
+                    Console.ReadKey();
+                    return user;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Press any key to try again.");
+                    Console.ReadKey();
+                }
+            }
+            return null;
+        }
+        public T ChangeLastName(T user)
+        {
+            bool flag = true;
+            while (flag)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Enter new last name:");
                 string newLastName = Console.ReadLine();
-                user.FirstName = newFirstName;
                 user.LastName = newLastName;
                 if (ValidationHelper.ValidateFirstNameLastName(user) == true)
                 {
                     flag = false;
+                    Console.WriteLine("Success!");
+                    Console.WriteLine("Press any key to continue");
+                    Console.ReadKey();
                     return user;
                 }
                 else
@@ -69,6 +96,10 @@ namespace TimeTrackingApp.Services.Implementations
                 if (ValidationHelper.ValidatePassword(user) == true)
                 {
                     flag = false;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Success!");
+                    Console.WriteLine("Press any key to continue");
+                    Console.ReadKey();
                     return user;
                 }
                 else
@@ -99,6 +130,8 @@ namespace TimeTrackingApp.Services.Implementations
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Success!");
                     Console.WriteLine("User account deactivated");
                     Console.WriteLine("Press any key to continue");
                     Console.ReadKey();
@@ -128,42 +161,103 @@ namespace TimeTrackingApp.Services.Implementations
                     bool menuflag = true;
                     while (menuflag)
                     {
+                        if (user.AccountActivity == false)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("This account has been deactivated.\nDo you want to activate it again ?\nType Yes to activate or press ENTER to go back to the log in with another account.");
+                            string response = Console.ReadLine();
+                            if (response == "Yes")
+                            {
+                                _database.ActivateAccount(user);
+                            }
+                            if(response == "")
+                            {
+                                break;
+                            }
+                        }
                         Console.Clear();
                         user.GetInfo();
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine("Welcome to the main menu !");
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("Choose one of the following options:");
-                        Console.WriteLine("1.) Deactivate account");
-                        Console.WriteLine("2.) Change password");
-                        Console.WriteLine("3.) Change first and last name");
+                        Console.WriteLine("1.) Track");
+                        Console.WriteLine("2.) Statistics");
+                        Console.WriteLine("3.) Account Management");
                         Console.WriteLine("4.) Log out");
-                        Console.BackgroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine("5.) Track");
-                        Console.BackgroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine("6.) Statistics");
-                        Console.BackgroundColor = ConsoleColor.Black;
                         bool menuChoiceValidation = int.TryParse(Console.ReadLine(), out int menuChoice);
                         if (menuChoiceValidation)
                         {
                             if (menuChoice == 1)
                             {
-                                DeactivateAccount((T)user);
-                                menuflag = false;
-                                return 1;
+                                Track((T)user);
+                                menuflag = true;
                             }
                             else if (menuChoice == 2)
                             {
-                                _database.UpdateUser(ChangePassword((T)user));
-                                Console.ForegroundColor = ConsoleColor.Yellow;
-                                menuflag = false;
-                                return 2;
+                                Statistics((T)user);
+                                menuflag = true;
                             }
                             else if (menuChoice == 3)
                             {
-                                _database.UpdateUser(ChangeFristAndLastName((T)user));
-                                menuflag = false;
-                                return 3;
+                                bool accManageFlag = true;
+                                while (accManageFlag)
+                                {
+                                    Console.Clear();
+                                    Console.WriteLine("1.) Deactivate account");
+                                    Console.WriteLine("2.) Change password");
+                                    Console.WriteLine("3.) Change first name");
+                                    Console.WriteLine("4.) Change last name");
+                                    Console.WriteLine("5.) Back to the main menu");
+                                    bool accountManagementValidation = int.TryParse(Console.ReadLine(), out int accManagementChoice);
+                                    if (accountManagementValidation)
+                                    {
+
+                                        if (accManagementChoice == 1)
+                                        {
+                                            DeactivateAccount((T)user);
+                                            menuflag = false;
+                                            return 1;
+                                        }
+                                        else if (accManagementChoice == 2)
+                                        {
+                                            _database.UpdateUser(ChangePassword((T)user));
+                                            Console.ForegroundColor = ConsoleColor.Yellow;
+                                            menuflag = false;
+                                            return 2;
+                                        }
+                                        else if (accManagementChoice == 3)
+                                        {
+                                            _database.UpdateUser(ChangeFristName((T)user));
+                                            menuflag = false;
+                                            return 3;
+                                        }
+                                        else if (accManagementChoice == 4)
+                                        {
+                                            _database.UpdateUser(ChangeLastName((T)user));
+                                            menuflag = false;
+                                            return 3;
+                                        }
+                                        else if (accManagementChoice == 5)
+                                        {
+                                            break;
+                                        }
+                                        else
+                                        {
+                                            Console.ForegroundColor = ConsoleColor.Red;
+                                            Console.WriteLine("Bad input please try again !");
+                                            Console.WriteLine("Press any key to continue.");
+                                            Console.ReadKey();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("Bad input please try again !");
+                                        Console.WriteLine("Press any key to continue.");
+                                        Console.ReadKey();
+                                    }
+                                }
                             }
                             else if (menuChoice == 4)
                             {
@@ -171,26 +265,21 @@ namespace TimeTrackingApp.Services.Implementations
                                 menuflag = false;
                                 return 9;
                             }
-                            else if (menuChoice == 5)
-                            {
-                                Track((T)user);
-                                menuflag = true;
-                            }
-                            else if (menuChoice == 6)
-                            {
-                                Statistics((T)user);
-                                menuflag = true;
-                            }
+
                             else
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("Bad input please try again !");
+                                Console.WriteLine("Press any key to continue.");
+                                Console.ReadKey();
                             }
                         }
                         else
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("Bad input please try again !");
+                            Console.WriteLine("Press any key to continue.");
+                            Console.ReadKey();
                         }
                     }
                 }
@@ -245,6 +334,9 @@ namespace TimeTrackingApp.Services.Implementations
                 if (ageValidatorSuccess && ValidationHelper.ValidateUsername(newUser) && ValidationHelper.ValidatePassword(newUser) && ValidationHelper.ValidateFirstNameLastName(newUser) && ValidationHelper.ValidateAge(newUser))
                 {
                     _database.InsertUser((T)newUser);
+                    Console.WriteLine("Success!");
+                    Console.WriteLine("Press any key to continue");
+                    Console.ReadKey();
                     flag = false;
                 }
                 else
@@ -262,109 +354,220 @@ namespace TimeTrackingApp.Services.Implementations
         }
         public void Statistics(T user)
         {
-            Console.Clear();
-            Console.WriteLine($"Welcome to statistics for {user.FirstName} {user.LastName}\n");
-            Console.WriteLine($"Time reading: {Math.Round(user.TimeReading, 2)} minutes.");
-            Console.WriteLine($"Time exercising: {Math.Round(user.TimeExercising, 2)} minutes.");
-            Console.WriteLine($"Time working: {Math.Round(user.TimeWorking, 2)} minutes.");
-            Console.WriteLine($"Time doing other hobbies: {Math.Round(user.TimeOtherHobbies, 2)} minutes.\n");
-            Console.WriteLine("Press any key to go to the Main Menu.");
-            Console.ReadKey();
+            bool statisticsFlag = true;
+            while (statisticsFlag)
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Choose one of the following statistics menu options:");
+                Console.WriteLine("1.) Reading statistics");
+                Console.WriteLine("2.) Exercising statistics");
+                Console.WriteLine("3.) Working statistics");
+                Console.WriteLine("4.) Hobby statistics");
+                Console.WriteLine("5.) Global statistics");
+                Console.WriteLine("6.) Back to main menu");
+                bool statisticsValidation = int.TryParse(Console.ReadLine(), out int statisticsChoice);
+                if (statisticsValidation)
+                {
+                    if (statisticsChoice == 1)
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"Welcome to statistics for {user.FirstName} {user.LastName}\n");
+                        Console.WriteLine("Reading statistics:\n\n");
+                        Console.WriteLine($"Time reading: {Math.Round(user.TimeReading / 60, 4)} hours.\n");
+                        Console.WriteLine($"Time reading: {Math.Round(user.TimeReading, 2)} minutes.\n");
+                        Console.WriteLine($"Time reading [Belles Lettres]: {Math.Round(user.BellesLettres, 2)} minutes.\n");
+                        Console.WriteLine($"Time reading [Fiction]: {Math.Round(user.Fiction, 2)} minutes.\n");
+                        Console.WriteLine($"Time reading [Professional Literature]: {Math.Round(user.ProfessionalLiterature, 2)} minutes.\n");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        if (user.BellesLettres > user.Fiction && user.BellesLettres > user.ProfessionalLiterature)
+                        {
+                            user.FavouriteReadingTypeActivity = "Belles Lettres";
+                        }
+                        else if (user.Fiction > user.BellesLettres && user.Fiction > user.ProfessionalLiterature)
+                        {
+                            user.FavouriteReadingTypeActivity = "Fiction";
+                        }
+                        else
+                        {
+                            user.FavouriteReadingTypeActivity = "Professional Literature";
+                        }
+                        Console.WriteLine($"Favourite reading type:\n{user.FavouriteReadingTypeActivity}");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"Total pages: {user.TotalPages}\n");
+                        statisticsFlag = false;
+                        Console.WriteLine("Press any key to go to the Main Menu.");
+                        Console.ReadKey();
+                    }
+                    else if (statisticsChoice == 2)
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"Welcome to statistics for {user.FirstName} {user.LastName}\n");
+                        Console.WriteLine("Exercising statistics:\n\n");
+                        Console.WriteLine($"Time exercising: {Math.Round(user.TimeExercising / 60, 4)} hours.\n");
+                        Console.WriteLine($"Time exercising: {Math.Round(user.TimeExercising, 2)} minutes.\n");
+                        Console.WriteLine($"Time exercising [general]: {Math.Round(user.General, 2)} minutes.\n");
+                        Console.WriteLine($"Time exercising [running]: {Math.Round(user.Running, 2)} minutes.\n");
+                        Console.WriteLine($"Time exercising [sport]: {Math.Round(user.Sport, 2)} minutes.\n");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        if (user.General > user.Running && user.General > user.Sport)
+                        {
+                            user.FavouriteExerciseType = "General";
+                        }
+                        else if (user.Running > user.General && user.Running > user.Sport)
+                        {
+                            user.FavouriteExerciseType = "Running";
+                        }
+                        else
+                        {
+                            user.FavouriteExerciseType = "Sport";
+                        }
+                        Console.WriteLine($"Favourite exercising type:\n{user.FavouriteExerciseType}");
+                        statisticsFlag = false;
+                        Console.WriteLine("Press any key to go to the Main Menu.");
+                        Console.ReadKey();
+                    }
+                    else if (statisticsChoice == 3)
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"Welcome to statistics for {user.FirstName} {user.LastName}\n");
+                        Console.WriteLine("Working statistics:\n\n");
+                        Console.WriteLine($"Time working: {Math.Round(user.TimeWorking / 60, 2)} hours.\n");
+                        Console.WriteLine($"Time working: {Math.Round(user.TimeWorking, 2)} minutes.\n");
+                        Console.WriteLine($"Time working from home: {Math.Round(user.Home / 60, 2)} hours.\n");
+                        Console.WriteLine($"Time working from the office: {Math.Round(user.Office / 60, 2)} hours.\n");
+                        statisticsFlag = false;
+                        Console.WriteLine("Press any key to go to the Main Menu.");
+                        Console.ReadKey();
+                    }
+                    else if (statisticsChoice == 4)
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"Welcome to statistics for {user.FirstName} {user.LastName}\n");
+                        Console.WriteLine($"Time doing other hobbies: {Math.Round(user.TimeOtherHobbies, 2)} minutes.\n");
+                        Console.WriteLine($"List of your hobbies:");
+                        foreach (string item in user.Hobbies)
+                        {
+                            Console.WriteLine(item);
+                        }
+                        statisticsFlag = false;
+                        Console.WriteLine("Press any key to go to the Main Menu.");
+                        Console.ReadKey();
+
+                    }
+                    else if (statisticsChoice == 5)
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"Welcome to statistics for {user.FirstName} {user.LastName}\n");
+                        if (user.TimeReading > user.TimeExercising && user.TimeReading > user.TimeWorking && user.TimeReading > user.TimeOtherHobbies)
+                        {
+                            user.FavouriteActivity = "Your favourite activity is Reading !\n";
+                        }
+                        else if (user.TimeExercising > user.TimeReading && user.TimeExercising > user.TimeWorking && user.TimeExercising > user.TimeOtherHobbies)
+                        {
+                            user.FavouriteActivity = "Your favourite activity is Exercising !\n";
+                        }
+                        else if (user.TimeWorking > user.TimeReading && user.TimeWorking > user.TimeExercising && user.TimeWorking > user.TimeOtherHobbies)
+                        {
+                            user.FavouriteActivity = "Your favourite activity is Working !\n";
+                        }
+                        else
+                        {
+                            user.FavouriteActivity = "Your favourite activity is doing other hobbies !\n";
+                        }
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine($"Favourite activity: {user.FavouriteActivity}");
+                        double totalTime = user.TimeReading + user.TimeWorking + user.TimeExercising + user.TimeOtherHobbies;
+                        Console.WriteLine($"Total time spent on all activities: {Math.Round(totalTime / 60, 3)} hours");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("Press any key to go to the Main Menu.");
+                        Console.ReadKey();
+                    }
+                    else if (statisticsChoice == 6)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Bad input try again !");
+                        Console.WriteLine("Press any key to continue.");
+                        Console.ReadKey();
+                    }
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Bad input try again !");
+                    Console.WriteLine("Press any key to continue.");
+                    Console.ReadKey();
+                }
+            }
         }
+
         public void Track(T user)
         {
             bool flag = true;
             while (flag)
             {
                 Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Choose activity:\n");
                 Console.WriteLine("1.) Reading");
                 Console.WriteLine("2.) Exercising");
                 Console.WriteLine("3.) Working");
                 Console.WriteLine("4.) Other hobbies");
+                Console.WriteLine("5.) Back to main menu");
                 bool activityValidation = int.TryParse(Console.ReadLine(), out int activityChoice);
                 if (activityValidation)
                 {
-                    if (activityChoice == 1)
+                    if (activityChoice <= 5 && activityChoice > 0)
                     {
-                        readingActivity.ReadingActivity();
-                        Stopwatch stopwatch = new Stopwatch();
-                        stopwatch.Start();
-                        Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Press ENTER to stop.");
-                        string stop = Console.ReadLine();
-                        if (stop == "")
+
+                        if (activityChoice == 1)
                         {
-                            stopwatch.Stop();
-                            TimeSpan time = stopwatch.Elapsed;
-                            double convertedTime = Convert.ToDouble(time.TotalSeconds);
-                            user.TimeReading += convertedTime / 60;
-                            Console.WriteLine($"Time spent on this activity (For total time go to statistics in the main menu): {Math.Round(convertedTime / 60, 2)} minutes.");
-                            Console.WriteLine("Press any key to go back to the Main Menu.");
-                            Console.ReadKey();
+                            readingActivity.ReadingActivity(user);
                             flag = false;
                         }
-                    }
-                    else if (activityChoice == 2)
-                    {
-                        exercisingActivity.ExercisingActivity();
-                        Stopwatch stopwatch = new Stopwatch();
-                        stopwatch.Start();
-                        Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Press ENTER to stop.");
-                        string stop = Console.ReadLine();
-                        if (stop == "")
+                        else if (activityChoice == 2)
                         {
-                            stopwatch.Stop();
-                            TimeSpan time = stopwatch.Elapsed;
-                            double convertedTime = Convert.ToDouble(time.TotalSeconds);
-                            user.TimeExercising += convertedTime / 60;
-                            Console.WriteLine($"Time spent on this activity (For total time go to statistics in the main menu): {Math.Round(convertedTime / 60, 2)} minutes.");
-                            Console.WriteLine("Press any key to go back to the Main Menu.");
-                            Console.ReadKey();
+                            exercisingActivity.ExercisingActivity(user);
                             flag = false;
                         }
-                    }
-                    else if (activityChoice == 3)
-                    {
-                        workingActivity.WorkingActivity();
-                        Stopwatch stopwatch = new Stopwatch();
-                        stopwatch.Start();
-                        Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Press ENTER to stop.");
-                        string stop = Console.ReadLine();
-                        if (stop == "")
+                        else if (activityChoice == 3)
                         {
-                            stopwatch.Stop();
-                            TimeSpan time = stopwatch.Elapsed;
-                            double convertedTime = Convert.ToDouble(time.TotalSeconds);
-                            user.TimeWorking += convertedTime / 60;
-                            Console.WriteLine($"Time spent on this activity (For total time go to statistics in the main menu): {Math.Round(convertedTime / 60, 2)} minutes.");
-                            Console.WriteLine("Press any key to go back to the Main Menu.");
-                            Console.ReadKey();
+                            workingActivity.WorkingActivity(user);
                             flag = false;
                         }
-                    }
-                    else if (activityChoice == 4)
-                    {
-                        otherHobbiesActivity.OtherHobiesActivity();
-                        Stopwatch stopwatch = new Stopwatch();
-                        stopwatch.Start();
-                        Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Press ENTER to stop.");
-                        string stop = Console.ReadLine();
-                        if (stop == "")
+                        else if (activityChoice == 4)
                         {
-                            stopwatch.Stop();
-                            TimeSpan time = stopwatch.Elapsed;
-                            double convertedTime = Convert.ToDouble(time.TotalSeconds);
-                            user.TimeOtherHobbies += convertedTime / 60;
-                            Console.WriteLine($"Time spent on this activity (For total time go to statistics in the main menu): {Math.Round(convertedTime / 60, 2)} minutes.");
-                            Console.WriteLine("Press any key to go back to the Main Menu.");
-                            Console.ReadKey();
+                            otherHobbiesActivity.OtherHobiesActivity(user);
                             flag = false;
                         }
+                        else if (activityChoice == 5)
+                        {
+                            break;
+                        }
                     }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Invalid input. Please try again !");
+                        Console.WriteLine("Press any key to try again.");
+                        Console.ReadKey();
+                    }
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid input. Please try again !");
+                    Console.WriteLine("Press any key to try again.");
+                    Console.ReadKey();
                 }
             }
         }

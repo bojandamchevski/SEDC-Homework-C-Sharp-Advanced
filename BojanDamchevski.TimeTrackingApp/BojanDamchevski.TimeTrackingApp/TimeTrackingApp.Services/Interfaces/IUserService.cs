@@ -10,7 +10,8 @@ namespace TimeTrackingApp.Services.Interfaces
         void Track(T user);
         T ChangePassword(T user);
         int LogOut();
-        T ChangeFristAndLastName(T user);
+        T ChangeFristName(T user);
+        T ChangeLastName(T user);
         T DeactivateAccount(T user);
     }
 }

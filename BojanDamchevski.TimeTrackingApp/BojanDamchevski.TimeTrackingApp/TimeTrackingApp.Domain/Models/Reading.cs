@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using TimeTrackingApp.Domain.Enums;
 
 namespace TimeTrackingApp.Domain.Models
 {
@@ -7,16 +9,50 @@ namespace TimeTrackingApp.Domain.Models
         public string Title { get; set; }
         public int Pages { get; set; }
         public ActivityType Type { get; set; }
+        public ReadingType ReadingType { get; set; }
         public Reading()
         {
             Title = "Reading Activity";
             Pages = 0;
             Type = ActivityType.Reading;
         }
-        public void ReadingActivity()
+        public void ReadingStopwatch(ReadingType readingType, User user)
         {
-            bool flag = true;
-            while (flag)
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Press ENTER to stop.");
+            string stop = Console.ReadLine();
+            if (stop == "")
+            {
+                stopwatch.Stop();
+                TimeSpan time = stopwatch.Elapsed;
+                double convertedTime = Convert.ToDouble(time.TotalSeconds);
+                if (readingType == ReadingType.BellesLetres)
+                {
+                    user.TotalPages += Pages;
+                    user.BellesLettres += convertedTime / 60;
+                }
+                if (readingType == ReadingType.Fiction)
+                {
+                    user.TotalPages += Pages;
+                    user.Fiction += convertedTime / 60;
+                }
+                if (readingType == ReadingType.ProfessionalLiterature)
+                {
+                    user.TotalPages += Pages;
+                    user.ProfessionalLiterature += convertedTime / 60;
+                }
+                user.TimeReading += convertedTime / 60;
+                Console.WriteLine($"Time spent on this activity [{Title}] (For total time go to statistics in the main menu): {Math.Round(convertedTime / 60, 2)} minutes.");
+                Console.WriteLine("Press any key to go back to the Main Menu.");
+                Console.ReadKey();
+            }
+        }
+        public void ReadingActivity(User user)
+        {
+            bool readingflag = true;
+            while (readingflag)
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -31,19 +67,22 @@ namespace TimeTrackingApp.Domain.Models
                     {
                         Console.WriteLine("Reading Belles Lettres");
                         Pages += 10;
-                        flag = false;
+                        ReadingStopwatch(ReadingType.BellesLetres, user);
+                        readingflag = false;
                     }
                     else if (choice == 2)
                     {
                         Console.WriteLine("Reading Fiction");
                         Pages += 12;
-                        flag = false;
+                        ReadingStopwatch(ReadingType.Fiction, user);
+                        readingflag = false;
                     }
                     else if (choice == 3)
                     {
                         Console.WriteLine("Reading Professional Literature");
                         Pages += 15;
-                        flag = false;
+                        ReadingStopwatch(ReadingType.ProfessionalLiterature, user);
+                        readingflag = false;
                     }
                     else
                     {

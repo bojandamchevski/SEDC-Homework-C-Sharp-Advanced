@@ -6,6 +6,7 @@ namespace TimeTrackingApp.Domain.Database
     {
         void InsertUser(T user);
         User RemoveUser(User removedUser);
+        User ActivateAccount(User activatedUser);
         void UpdateUser(T user);
         User CheckUser(string username, string password);
 

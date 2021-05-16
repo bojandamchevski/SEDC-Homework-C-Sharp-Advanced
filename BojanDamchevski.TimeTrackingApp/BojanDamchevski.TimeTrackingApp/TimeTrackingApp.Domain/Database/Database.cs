@@ -22,7 +22,15 @@ namespace TimeTrackingApp.Domain.Database
         public User RemoveUser(User removedUser)
         {
             User user = _users.FirstOrDefault(x => x.Id == removedUser.Id);
-            _users.Remove((T)user);
+            //_users.Remove((T)user);
+            user.AccountActivity = false;
+            return user;
+        }
+        public User ActivateAccount(User activatedUser)
+        {
+            User user = _users.FirstOrDefault(x => x.Id == activatedUser.Id);
+            //_users.Remove((T)user);
+            user.AccountActivity = true;
             return user;
         }
 
