@@ -1,0 +1,26 @@
+The equation is: 23 + 5.
+And the result is: 28
+
+
+The equation is: 34 + 123.
+And the result is: 157
+
+
+The equation is: 2 + 8.
+And the result is: 10
+
+
+
+The equation is: 2 + 4.
+And the result is: 6
+
+
+The equation is: 6 + 8.
+And the result is: 14
+
+
+The equation is: 10 + 12.
+And the result is: 22
+
+
+
